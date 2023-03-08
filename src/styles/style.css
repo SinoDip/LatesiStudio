@@ -9,7 +9,7 @@ header {
 }
 
 header nav #logo img {
-  position: fixed;
+  position: absolute;
   width: 3.3%;
   left: 2%;
   top: 3%;
@@ -17,7 +17,7 @@ header nav #logo img {
 
 .test {
   z-index: 999999;
-  position: fixed;
+  position: absolute;
   right: 2%;
   top: 3%;
 }
@@ -177,4 +177,41 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   120% {
     background-position: 180px;
   }
+}
+
+.main-content {
+  width: 100vw;
+  background-color: var(--bg-black);
+  height: 100vh;
+  margin-top: 100vh;
+}
+.main-content .subnav {
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subnav .logo-full {
+}
+.subnav ul {
+  width: 60%;
+  display: flex;
+  font-family: var(--ff);
+  color: white;
+  margin-right: 1%;
+  font-size: 1.2em;
+}
+.subnav ul a {
+  margin-left: 10%;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav img {
+  width: 15%;
+}
+
+.active {
+  color: green;
 }
