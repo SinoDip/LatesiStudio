@@ -11,13 +11,24 @@
         <div id="logo">
           <img src="public/images/sm-logo-black.png" alt="" />
         </div>
-        <div class="test">
-          <label for="check">
-            <input type="checkbox" id="check" />
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+        <div class="hamburger--nav">
+          <svg
+            id="hamburger-menu"
+            class="ham hamRotate180 ham5"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="toggleMenu()"
+          >
+            <path
+              class="line top"
+              d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429"
+            />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429"
+            />
+          </svg>
         </div>
       </nav>
     </header>
@@ -34,14 +45,15 @@
         <div class="logo-full">
           <a href="#"><img src="/public/images/latesi-white.png" alt="" /></a>
         </div>
-        <ul>
-          <a href=""><li>About</li></a>
-          <a href=""><li class="active">Cases</li></a>
-          <a href=""><li>Contact</li></a>
-        </ul>
       </div>
     </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu--hidden");
+      menu.classList.toggle("active");
+    }
+  </script>
 </html>
