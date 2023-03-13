@@ -11,24 +11,12 @@
         <div id="logo">
           <img src="public/images/sm-logo-black.png" alt="" />
         </div>
-        <div class="hamburger--nav">
-          <svg
-            id="hamburger-menu"
-            class="ham hamRotate180 ham5"
-            viewBox="0 0 100 100"
-            width="80"
-            onclick="toggleMenu()"
-          >
-            <path
-              class="line top"
-              d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429"
-            />
-            <path class="line middle" d="m 70,50 h -40" />
-            <path
-              class="line bottom"
-              d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429"
-            />
-          </svg>
+        <div class="nav--content">
+          <ul>
+            <a href="#section1"><li>About</li></a>
+            <a href=""><li>Cases</li></a>
+            <a href=""><li>Contact</li></a>
+          </ul>
         </div>
       </nav>
     </header>
@@ -50,10 +38,13 @@
 
     <script type="module" src="/src/main.js"></script>
   </body>
+  <div id="circle" class="circle"></div>
+
   <script>
     function toggleMenu() {
       var menu = document.getElementById("menu--hidden");
       menu.classList.toggle("active");
     }
   </script>
+  <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
 </html>

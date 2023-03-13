@@ -4,28 +4,64 @@ body {
 }
 
 header {
-  display: flex;
   width: 100%;
+  padding: 1% !important;
+  z-index: 999999;
+}
+
+nav {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--content {
+  width: 40%;
+}
+.nav--content ul {
+  font-family: var(--ff);
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.nav--content a {
+  text-decoration: none;
+  color: var(--bg-black);
+}
+
+header ul a li:hover {
+  animation: wiggle 0.5s ease-in-out;
+  color: white;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 header nav #logo img {
-  position: absolute;
-  width: 3.3%;
-  left: 2%;
-  top: 3%;
-}
-
-.hamburger--nav {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: flex;
-  justify-content: end;
+  width: 60%;
+  margin-left: 10%;
 }
 
 .bg-object-rectangle {
   position: absolute;
   top: 0;
+  z-index: -1;
 }
 
 .bg-object-rectangle p {
