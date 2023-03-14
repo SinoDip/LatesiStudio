@@ -92,7 +92,7 @@ header nav #logo img {
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 5s infinite linear;
+  animation: shine 10s infinite linear;
   animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
   font-weight: 600;
@@ -171,7 +171,7 @@ header nav #logo img {
 .main-content {
   width: 100vw;
   background-color: var(--bg-black);
-  height: 100vh;
+  height: 200vh;
   margin-top: 100vh;
 }
 .main-content .subnav {
@@ -197,4 +197,37 @@ header nav #logo img {
 
 .subnav img {
   width: 15%;
+}
+
+.show--display {
+  width: 50%;
+  display: flex;
+}
+
+.left--block {
+  height: 230px;
+  background-color: white;
+  margin-top: 25%;
+}
+
+.left {
+  width: 25%;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+
+.right {
+  width: 25%;
+  margin-left: 7%;
+  margin-top: -8%;
+}
+
+.right--block {
+  height: 230px;
+  background-color: white;
+  margin-top: 25%;
+}
+
+.inactive {
+  opacity: 40%;
 }
